@@ -2,11 +2,11 @@
 Project name: Random Password generator
 
 We have considered the following sets of characters:
-set 1: numbers
-set 2: lower case alphabets
-set 3: upper case alphabets
-set 4: ? + = - (special char 1)
-set 5: @ # $ ! (special char 2)
+1. set 1: numbers
+2. set 2: lower case alphabets
+3. set 3: upper case alphabets
+4. set 4: ? + = - (special char 1)
+5. set 5: @ # $ ! (special char 2)
 
 First we take input password from the user and detect its strength based on the following criteria:
 1. 50% - Only characters from any one set
