@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 void swap (char *p1, char*p2)
 {
@@ -86,9 +86,9 @@ void generate_password()
 { 
     //creating arrays for different sets of characters
     char numbers[] = "0123456789"; 
-	char lower_case[] = "abcdefghijklmnoqprstuvwyzx"; 
-	char upper_case[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX"; 
-	char special_char1[] = "?-+=";
+    char lower_case[] = "abcdefghijklmnoqprstuvwyzx"; 
+    char upper_case[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX"; 
+    char special_char1[] = "?-+=";
     char special_char2[] = "!@#$";
 
 
@@ -122,12 +122,12 @@ void generate_password()
 int main()
 {
     system("cls");                   // used to clear the screen each time the program is run
-    char user_password[10];
+    char user_password[100];
 
-    printf("\n This program will tell the strength of your password, and also suggests you a randomly generated 100%% strength password. ");
+    printf("\n This program will tell the strength of your password, and also suggest a randomly generated 100%% strength password. ");
 
     //labelled as repeat
-    repeat: printf("\n The password shoud not contain the following characters:");
+    repeat: printf("\n The password should not contain the following characters:");
     printf("\n '_', '/', '*', '%%', '&', '\', ';', '|', '~'.");
     printf("\n The password should contain exactly 10 characters.");   
 
@@ -137,7 +137,7 @@ int main()
     if(strlen(user_password)!=10)
     {
         printf("\n Password should be 10 characters long.\n\n");
-        goto repeat;    //restart from the label 'repeat'
+        goto repeat;    	    //restart from the label 'repeat'
     }
 
 
@@ -161,5 +161,6 @@ int main()
         srand((unsigned int)(time(NULL))); 
         generate_password();
     }  
-	return 0; 
+    printf("\n");
+    return 0; 
 }
