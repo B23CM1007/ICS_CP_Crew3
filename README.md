@@ -12,7 +12,7 @@ First we take input password from the user and detect its strength based on the 
 1. 50% - Only characters from any one set
 2. 65% - Characters from any two sets 
 3. 75% - Characters from any three sets
-4. 85% - special characters from any four sets
+4. 85% - Characters from any four sets
 5. 95% - All sets included but character from every set is not repeated twice
 6. 100% - All sets included and character from every set is repeated twice which means there are two characters from each set.
 
